@@ -9,12 +9,21 @@ if ($conn->connect_error) {
     die("Failed to connect: " . $conn->connect_error);
 } 
 
-$conn
-
 if (!empty($_GET['id'])) {
 	#TODO: Redirect
-    header("Location: http");
-    die();
+  $id = urlencode($_GET['id']));
+
+  $stmt = $handler->prepare("SELECT * FROM shorturls WHERE id = ?");
+
+  $stmt->bind_param('s', $id);
+  $stmt->execute();
+
+  if ($stmt->get_result()) {
+    var_dump($res->fetch_all());
+  }
+
+  header("Location: " + $);
+  die();
 }
 
 ?>
