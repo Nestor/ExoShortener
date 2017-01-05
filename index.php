@@ -79,13 +79,8 @@
 	</header>
 	<main>
     <div class="container">
-	<div class="row">
-	<div class="col s2"></div>
-	<div class="col s8">
-	<br><br><br><br>
-			<div class="row">
-			<div class="col s2"></div>
-			<div class="col s8">
+			<div class="row" style="padding-top: 10%;">
+			<div class="col s12 m6 offset-m3">
 			<div class="card hoverable">
             <div class="card-content">
 			
@@ -99,7 +94,7 @@
 				    <label for="url">URL</label>
 				  </div>
 				  
-				  <div class="input-field col s12">
+				  <div class="input-field col s12" color="color:orange;">
 				    <input id="password" type="password" class="validate" name="pw">
 				    <label for="password">Password</label>
 				  </div>
@@ -115,9 +110,7 @@
 			
 			</div>
 			</div>
-			</div>
       </div>
-	  <div class="col s2"></div>
 	
 	</div>
 	<script src="js/jquery-3.0.0.min.js"></script>
